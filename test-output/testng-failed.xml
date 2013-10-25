@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [WebDriverTests]" parallel="tests">
+  <parameter name="location" value="C:\\biabraham\\SeleniumSetup\\chromedriver.exe"/>
+  <parameter name="browser" value="chrome"/>
+  <test name="Default test(failed)" parallel="tests">
+    <classes>
+      <class name="com.mycompany.app.TestRegistrationPage">
+        <methods>
+          <include name="setUp"/>
+          <include name="testRegistrationPage"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.mycompany.app.TestRegistrationPage -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [WebDriverTests] -->
