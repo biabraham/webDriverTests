@@ -60,17 +60,7 @@ public class RegistrationPage {
 		
 	}
 	
-	public void enterDetails() {
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	}
+	
 	
 	
 
