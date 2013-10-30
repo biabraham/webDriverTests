@@ -1,6 +1,7 @@
 package com.mycompany.app;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestRegistrationPage extends WebdriverSetup{
@@ -25,10 +26,13 @@ public class TestRegistrationPage extends WebdriverSetup{
 		registrationPage.enterCofirmPassword("password");
 		registrationPage.clickSubmitButton();
 		
-		
-		assert driver.findElement(By.tagName("body")).getText().contains("Thank you for registering. " +
+		Assert.assertTrue(driver.findElement(By.tagName("body")).getText().contains("Thank you for registering. " +
 				"You may now sign-in using the user name " +
-				"and password you've just entered.");
+				"and password you've just entered."));
+		
+		/*assert driver.findElement(By.tagName("body")).getText().contains("Thank you for registering. " +
+				"You may now sign-in using the user name " +
+				"and password you've just entered.");*/
 		 
 	}
 	
