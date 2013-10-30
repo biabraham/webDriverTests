@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="WebDriverTests" parallel="tests">
-<parameter name="browser" value="chrome" />
+<parameter name="browser" value="firefox" />
 <parameter name="location" value="C:\\biabraham\\SeleniumSetup\\chromedriver.exe"/>
-  <test name="Test">
-  <!--parameter name="browser" value="chrome" /-->
+  <!-- <test name="Test">
+  parameter name="browser" value="chrome" /
   	<classes>
   			<class name="com.test.WebDriverTest1"></class>
   	</classes>
-  </test> 
+  </test>  -->
   
   
   <test name="Test1">
   <!-- parameter name="browser" value="firefox" /-->
   	<classes>
-  			<class name="com.test.WebDriverTest1"></class>
+  			<class name="com.mycompany.app.TestRegistrationPage"></class>
   	</classes>
   </test> 
 </suite> 
